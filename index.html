@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>역사① Ⅴ·Ⅵ 단원 학습</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Serif+KR:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="menu-btn" id="menuBtn" aria-label="차례 열기">☰</button>
+    <a href="#home" class="brand">
+      <span class="brand-mark">史</span>
+      <span class="brand-text">중학 역사① <small>Ⅴ·Ⅵ 단원</small></span>
+    </a>
+    <div class="search">
+      <input id="search" type="search" placeholder="용어 검색 (예: 베르사유)" autocomplete="off">
+      <div id="searchResults" class="search-results" hidden></div>
+    </div>
+    <button class="icon-btn" id="themeBtn" aria-label="화면 테마 바꾸기">🌙</button>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar" id="sidebar" aria-label="차례"></nav>
+    <div class="scrim" id="scrim" hidden></div>
+    <main id="main" class="main" tabindex="-1"></main>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="essay.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
